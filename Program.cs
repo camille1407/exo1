@@ -1,21 +1,35 @@
+
 using System;
 
-namespace essai
+class Program
 {
-    class program
+    static void Main(string[] args)
     {
-        static void main(String[] args)
-        {
-            const string V = "05/11/2012";
-            const string V6 = "04-08-1990";
-            Employe e = new Employe(10941, "SALIM", "Omar", V6, 1000);
-            e.Ajouter_Age(25);
-            e.Ajouter_Anciennete(3);
-            Employe m = new Employe(10941, "SALIM Omar", 25, 3, 10000);
-            m.Ajouter_Age(25);
-            m.Ajouter_Anciennete(3);
-            m.Ajouter_AugmentationDuSalaire();
-            m.AfficherEmployé();
-        }
-    } 
+        int mat;
+        string nom, prenom;
+        DateTime dn, de;
+        double salaire;
+
+        Console.Out.Write("Matricule: ");
+        mat = int.Parse(Console.In.ReadLine());
+        Console.Out.Write("Nom: ");
+        nom = Console.In.ReadLine();
+        Console.Out.Write("Prénom: ");
+        prenom = Console.In.ReadLine();
+        Console.Out.Write("Date de naissance (jj/mm/aaaa): ");
+        dn = DateTime.Parse(Console.In.ReadLine());
+        Console.Out.Write("Date embauche (jj/mm/aaaa): ");
+        de = DateTime.Parse(Console.In.ReadLine());
+        Console.Out.Write("salaire: ");
+        salaire = double.Parse(Console.In.ReadLine());
+
+        Employe e = new Employe(mat, nom, prenom, dn, de, salaire);
+        e.AfficherEmploye();
+
+        Console.Out.WriteLine("\n\nAprés application de l'augmentation de salaire");
+        e.AugmentationDuSalaire();
+        e.AfficherEmploye();
+
+        Console.ReadKey();
+    }
 }

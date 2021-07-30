@@ -1,2 +1,6 @@
 C:\Users\Utilisateur\Source\Repos\exo1\obj\x86\Debug\exo1.csproj.AssemblyReference.cache
 C:\Users\Utilisateur\Source\Repos\exo1\obj\x86\Debug\exo1.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Source\Repos\exo1\bin\Debug\ConsoleApplication.exe
+C:\Users\Utilisateur\Source\Repos\exo1\bin\Debug\ConsoleApplication.pdb
+C:\Users\Utilisateur\Source\Repos\exo1\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Utilisateur\Source\Repos\exo1\obj\x86\Debug\ConsoleApplication.pdb
